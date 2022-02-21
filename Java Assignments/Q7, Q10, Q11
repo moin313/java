@@ -1,0 +1,19 @@
+Ans 7:-
+    States of thread
+    New - Ready sate of newly created thread.
+    Start - Now the thread use to execute the run method assign to it.
+    wait - In this state thread need to wait for an interval using join and wait method.
+    Blocked - In this state thread's execution blocked.
+    Terminate - After the execution of the task thread goes in termination.
+
+Ans 10:-
+    Hashset                                                     LinkedHashset
+    Hashset insertion is an unordered operation                 It maintain insertion order results are predictable
+    It doesn't work on sorting the data                         It works on sorting the inserted data
+    It works on hastable                                        along with hashtable it also uses linkedlist
+
+Ans 11;-
+    Set                                                         List
+    It mainly use to avoid duplicacy                            It mainly use to preserve the insertion order
+    It doesn't folow an order                                   It follows order
+    It can have only single null value                          It contain more nul values
