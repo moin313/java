@@ -1,0 +1,45 @@
+Ans 1:
+    Orm Stands for object relation mapping.
+    It operates on the objects.So the whole methodology followed by ORMs is dependent on the object-oriented Concepts.
+    ORMs generate objects which map to tables in the database virtually.
+    Once these objects are up, then it can easily work to retrieve, manipulate or delete any field from the table without
+    paying much attention to language specifically.
+    ORM lets us use classes instead of database tables, and those classes implement DBAL to save you from writing queries.
+
+
+Ans 2:
+    The name of the default hibernate configuration file hibernate.cfg.xml.
+    while configuring the hibernate file if file name is default then no need to pass it explicitly otherwise
+    It is necessary to pass configuration file name The property name that is used to automatically create the
+    table in case the table is not there hbm2ddl.
+
+
+Ans 3:
+    Hibernate XML mapping file contains the mapping relationship between Java class and database table.
+    This is always named as “filename.hbm.xml”.
+
+Ans 5:
+    Criteria API provide us the facility of avoiding queries directly instead of writing Server based query
+    it is one of the main features of Hibernate.
+    The Criteria API allows us to build up a criteria query object programmatically and make ease of using pre-defined functions
+    for server interaction irrespective of server.
+
+Ans 6:
+    Association in hibernate tells the associativity among the classes which type of object is
+    associated(depend) on another type of object.
+    there are 4 type of association that is:-
+    one to one, one to many, many to one ,many to many
+
+    A one-to-one association implies that an entity is related to another entity by containing it one's.
+    For example :- One person can only posses one Identity for uniqueness.
+
+    One To Many Mapping in Hibernate. In simple terms, one to many mapping means that one row in a table can be mapped
+    to multiple rows in another table.
+    For example :- One person own many Vehicle.
+
+    A many-to-one association is the most common kind of association where an Object can be associated with multiple objects.
+    For example :- MAny children posses one parent.
+
+    A many to many mapping is made between two entities where one can have relation with multiple other entity
+    instances.
+    For example :- A customer can purchase many product and product can be purchased by many customer
