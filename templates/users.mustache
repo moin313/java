@@ -1,0 +1,41 @@
+<html>
+    <body >
+        <center>
+            <div style="width : 30%; padding : 2%; border : 3px solid black; border-radius : 3%; margin-top : 3%;">
+                <h1>User Profile</h1>
+                <p>
+                    <span>Name :{{Name}}</span>
+                    <span>User ID : {{Email}}</span>
+                    <span>Follower : {{Follower}}</span>
+                    <span style="margin-left : 12%;">
+                        <span><a href="/createPost">+ Tweet</a></span>
+                    </span>
+                </p>
+                <hr>
+                <div >
+                    {{#posts}}
+                        <h3 style="border: solid 1px black; background-color: rgba(0,0,0,0.2);"><span>ID : {{id}}</span> <span> Content :{{tweet}}</span></h3>
+                        <br>
+                    {{/posts}}
+                </div>
+            </div>
+
+            <div>
+                {{#users}}
+                    <h3 style="border: solid 1px black; background-color: rgba(0,0,0,0.2);"><span>ID : {{email}}</span> <span> Name :{{name}}</span>
+                        <form  action="/addFollower" method="post">
+                            <input type="hidden" name="email" value="{{email}}">
+                            <button >Follow</button>
+                        </form>
+                        <form  action="/unFollow" method="post">
+                            <input type="hidden" name="email" value="{{email}}">
+                            <button >unFollow</button>
+                        </form>
+                    </h3>
+                    <br>
+                {{/users}}
+            </div>
+        </center>
+    </body>
+</html>
+
